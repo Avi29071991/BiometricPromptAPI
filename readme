@@ -1,0 +1,11 @@
+This project is used to demonstrate use of BiometricPrompt API for authentication in Android P and above devices.
+For devices below Android version 28 (i.e. Android P) we need to wait for upgrade in support library from Google,
+as they might add BiometricPrompt API in support library for above mentioned devices.
+
+Code snippets:
+
+1.Change minSdkVersion, targetSdkVersion and compileSdkVersion to 28.
+2.Add permission "android.permission.USE_BIOMETRIC" in manifest file.
+3.Use "BiometricPrompt.Builder" class object to display biometric authentication dialog
+4.Use "authenticate" method of BiometricPrompt class to authenticate the user with either Fingerprint, Iris scan OR Face recognition and listen to its
+  results using "BiometricPrompt.AuthenticationCallback".

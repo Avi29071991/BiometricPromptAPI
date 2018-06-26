@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         /**
          * Currently BiometricPrompt API is supported only in Android P(version 28) devices.
          * For devices below Android version 28 Google is planning to provide Biometric Prompt Support Compat Library.
-         * This will be released in subsequent versions.
+         * This will be released in subsequent versions. We can use CryptoObject variable as well in authenticate method for more stronger authentication
+         * @link https://developer.android.com/reference/android/hardware/biometrics/BiometricPrompt.html#authenticate(android.hardware.biometrics.BiometricPrompt.CryptoObject,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.hardware.biometrics.BiometricPrompt.AuthenticationCallback
          */
         BiometricPrompt.Builder(this@MainActivity)
                 .setDescription("Test Biometric Dialog")
