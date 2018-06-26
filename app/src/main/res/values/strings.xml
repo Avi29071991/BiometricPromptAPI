@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BiometricPOC</string>
+    <string name="button_label">Click to display Biometric dialog</string>
+</resources>
